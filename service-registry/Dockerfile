@@ -1,3 +1,3 @@
 FROM java:8-jdk-alpine
-COPY maven /maven/
+COPY target/service-registry-0.0.1-SNAPSHOT.jar service-registry-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/maven/service-registry-0.0.1-SNAPSHOT.jar"]
